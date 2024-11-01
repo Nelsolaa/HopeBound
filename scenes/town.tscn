@@ -3733,4 +3733,3 @@ position = Vector2(-4, 10)
 collision_layer = 2
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(-48, 65)
