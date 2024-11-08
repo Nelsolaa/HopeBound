@@ -185,16 +185,18 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_2cowj"]
-size = Vector2(44, 60)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h4wmh"]
+size = Vector2(16, 16)
 
 [node name="Area2D" type="Area2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
+position = Vector2(8.5, 6)
+scale = Vector2(0.35, 0.35)
 sprite_frames = SubResource("SpriteFrames_8rrqr")
-animation = &"idle_left"
+animation = &"idle_right"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-2, 0)
-shape = SubResource("RectangleShape2D_2cowj")
+position = Vector2(8, 8.5)
+shape = SubResource("RectangleShape2D_h4wmh")
