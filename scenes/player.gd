@@ -6,6 +6,12 @@ extends CharacterBody2D
 
 const TILE_SIZE = 16
 
+enum PlayerState { IDLE, TURNING, WALKING }
+enum FacingDirection { LEFT, RIGHT, UP, DOWN }
+
+var player_state = PlayerState.IDLE
+var facing_direction = FacingDirection.DOWN
+
 var initial_position = Vector2(0, 0)
 var input_direction = Vector2(0, 0)
 var is_moving = false
@@ -13,9 +19,12 @@ var percent_moved_to_next_tile = 0.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	anim_tree.active = true
 	initial_position = position
 
 func _physics_process(delta):
+	#if player_state == PlayerState.TURNING or stop_input:
+		#return
 	if is_moving == false:
 		process_player_movement_input() # Verifique se essa função está implementada corretamente
 	elif input_direction != Vector2.ZERO:
