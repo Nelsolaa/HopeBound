@@ -3732,9 +3732,9 @@ tile_set = SubResource("TileSet_tc2qp")
 
 [node name="Player" parent="TileMap" instance=ExtResource("1_2ldfw")]
 position = Vector2(-4, 10)
-collision_layer = 2
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="TileMap/Player"]
+position = Vector2(4, -10)
 
 [node name="Node2D" parent="." instance=ExtResource("13_4shwu")]
 position = Vector2(8.5, -416.07)
