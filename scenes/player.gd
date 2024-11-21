@@ -1,6 +1,10 @@
 extends CharacterBody2D
 
+class_name Player
+
 @export var walk_speed = 4.0
+
+@onready var animation_player = $AnimationPlayer
 @onready var anim_tree = $AnimationTree
 @onready var anim_state = anim_tree.get("parameters/playback")
 
@@ -21,72 +25,39 @@ var percent_moved_to_next_tile = 0.0
 func _ready():
 	anim_tree.active = true
 	initial_position = position
+	NavigationManager.on_trigger_player_spawn.connect(_on_spawn)
 
-	
+func _on_spawn(position: Vector2, direction: String):
+	global_position = position
+	animation_player.play("Walk" + direction)
+	animation_player.stop()
 
 func _physics_process(delta):
-	#print("player state is right now: " + str(player_state))
-	if player_state == PlayerState.TURNING:
-#		PROBLEMA NESSA LINHA DE CODIGO, GERANDO UM LOOP INFINITO
-		return
-	elif is_moving == false:
-		#print("is_moving == false")
-		process_player_movement_input()
+	#if player_state == PlayerState.TURNING or stop_input:
+		#return
+	if is_moving == false:
+		process_player_movement_input() # Verifique se essa função está implementada corretamente
 	elif input_direction != Vector2.ZERO:
 		anim_state.travel("Walk")
-		#print("Walk")
-		move(delta)
+		move(delta) # Verifique se essa função move() existe e está implementada corretamente
 	else:
 		anim_state.travel("Idle")
-		#print("Idle")
 		is_moving = false
 
 func process_player_movement_input():
 	if input_direction.y == 0:
 		input_direction.x = int(Input.is_action_pressed("ui_right")) - int(Input.is_action_pressed("ui_left"))
-		print(input_direction.x)
 	if input_direction.x == 0:
 		input_direction.y = int(Input.is_action_pressed("ui_down")) - int(Input.is_action_pressed("ui_up"))
-		print(input_direction.y)
-		
 
 	if input_direction != Vector2.ZERO:
 		anim_tree.set("parameters/Idle/blend_position", input_direction)
 		anim_tree.set("parameters/Walk/blend_position", input_direction)
-		anim_tree.set("parameters/Turn/blend_position", input_direction)
-		
-		if need_to_turn():
-			#print("turning")
-			player_state = PlayerState.TURNING
-			anim_state.travel("Turn")
-			
-		else:
-			#print("walking")
-			initial_position = position
-			is_moving = true
+		initial_position = position
+		is_moving = true
 	else:
 		anim_state.travel("Idle")
 
-func need_to_turn():
-	var new_facing_direction
-	if input_direction.x < 0:
-		new_facing_direction = FacingDirection.LEFT
-	elif input_direction.x > 0:
-		new_facing_direction = FacingDirection.RIGHT
-	elif input_direction.y < 0:
-		new_facing_direction = FacingDirection.UP
-	elif input_direction.y > 0:
-		new_facing_direction = FacingDirection.DOWN
-		
-	
-	if facing_direction != new_facing_direction:
-		facing_direction = new_facing_direction
-		return true
-	facing_direction = new_facing_direction
-	return false
-
-func finished_turning():
-	player_state = PlayerState.IDLE
 
 		
 func move(delta):
@@ -97,3 +68,6 @@ func move(delta):
 		is_moving = false
 	else:
 		position = initial_position + (TILE_SIZE * input_direction * percent_moved_to_next_tile)
+
+func _on_collision_area_entered(area):
+	is_moving = false

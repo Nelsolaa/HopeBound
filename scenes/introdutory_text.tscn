@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=3 uid="uid://c0sxhq4t3mmf7"]
+
+[ext_resource type="Script" path="res://scenes/introdutory_text.gd" id="1_ap8qv"]
+[ext_resource type="FontFile" uid="uid://cfm1x36l8i3fk" path="res://Assets/Fonts/pixeloid-font/PixeloidSans-mLxMm.ttf" id="1_ggcin"]
+[ext_resource type="FontFile" uid="uid://clfe2gmxqok8i" path="res://Assets/Fonts/ancient-modern-tales-font/AncientModernTales-a7Po.ttf" id="2_1g8tn"]
+
+[node name="introdutory_text" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ap8qv")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -505.0
+offset_top = -74.0
+offset_right = 482.0
+offset_bottom = 75.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_ggcin")
+theme_override_font_sizes/font_size = 22
+text = "A cidade de HopeLand foi tomada pela tristeza,
+ ajude os seus habitantes a resolverem os seus problemas, 
+para que a felicidade volte a maravilhosa cidade "
+
+[node name="continuar" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("2_1g8tn")
+theme_override_font_sizes/font_size = 29
+text = "Continuar"
+
+[connection signal="pressed" from="VBoxContainer/continuar" to="." method="_on_continuar_pressed"]
