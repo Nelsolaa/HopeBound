@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://bqnk4fm47ivjn"]
+[gd_scene load_steps=41 format=3 uid="uid://bqnk4fm47ivjn"]
 
 [ext_resource type="Script" path="res://scenes/player.gd" id="1_4clrj"]
 [ext_resource type="Texture2D" uid="uid://cmsrepu32jamp" path="res://Assets/Player/Male_Spritesheet.png" id="1_h4yvq"]
@@ -137,6 +137,21 @@ tracks/0/keys = {
 "update": 1,
 "values": [0, 1]
 }
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"finished_turning"
+}]
+
+}
 
 [sub_resource type="Animation" id="Animation_8vp4f"]
 resource_name = "Turn_Left"
@@ -165,6 +180,20 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [false]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.1),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"finished_turning"
+}]
 }
 
 [sub_resource type="Animation" id="Animation_kvuh5"]
@@ -195,6 +224,20 @@ tracks/1/keys = {
 "update": 1,
 "values": [true]
 }
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.1),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"finished_turning"
+}]
+}
 
 [sub_resource type="Animation" id="Animation_btlcj"]
 resource_name = "Turn_Up"
@@ -211,6 +254,20 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [3, 4]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"finished_turning"
+}]
 }
 
 [sub_resource type="Animation" id="Animation_6548i"]
@@ -349,6 +406,30 @@ blend_point_3/node = SubResource("AnimationNodeAnimation_7g1g2")
 blend_point_3/pos = Vector2(0, -1)
 blend_mode = 1
 
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_o1qlc"]
+animation = &"Turn_Left"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_2irvg"]
+animation = &"Turn_Right"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_lffgp"]
+animation = &"Turn_Down"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_3f6np"]
+animation = &"Turn_Up"
+
+[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_poiuu"]
+blend_point_0/node = SubResource("AnimationNodeAnimation_o1qlc")
+blend_point_0/pos = Vector2(-1, 0)
+blend_point_1/node = SubResource("AnimationNodeAnimation_2irvg")
+blend_point_1/pos = Vector2(1, 0)
+blend_point_2/node = SubResource("AnimationNodeAnimation_lffgp")
+blend_point_2/pos = Vector2(0, 1)
+blend_point_3/node = SubResource("AnimationNodeAnimation_3f6np")
+blend_point_3/pos = Vector2(0, -1)
+snap = Vector2(0.01, 0.01)
+blend_mode = 1
+
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_0eem6"]
 animation = &"Walk_left"
 
@@ -377,17 +458,26 @@ blend_mode = 1
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_b2v26"]
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_vrtjk"]
-advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_l0sxa"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ssk42"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_r5nws"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_8v475"]
 
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_1t3ly"]
-states/End/position = Vector2(713, 143)
+states/End/position = Vector2(755, 143)
 states/Idle/node = SubResource("AnimationNodeBlendSpace2D_1dc7x")
 states/Idle/position = Vector2(321, 143)
 states/Start/position = Vector2(89, 143)
+states/Turn/node = SubResource("AnimationNodeBlendSpace2D_poiuu")
+states/Turn/position = Vector2(451, 231)
 states/Walk/node = SubResource("AnimationNodeBlendSpace2D_41bs7")
 states/Walk/position = Vector2(572, 143)
-transitions = ["Idle", "Walk", SubResource("AnimationNodeStateMachineTransition_htad8"), "Walk", "Idle", SubResource("AnimationNodeStateMachineTransition_b2v26"), "Start", "Idle", SubResource("AnimationNodeStateMachineTransition_vrtjk")]
-graph_offset = Vector2(-97, 5)
+transitions = ["Idle", "Walk", SubResource("AnimationNodeStateMachineTransition_htad8"), "Walk", "Idle", SubResource("AnimationNodeStateMachineTransition_b2v26"), "Start", "Idle", SubResource("AnimationNodeStateMachineTransition_vrtjk"), "Idle", "Turn", SubResource("AnimationNodeStateMachineTransition_l0sxa"), "Turn", "Idle", SubResource("AnimationNodeStateMachineTransition_ssk42"), "Turn", "Walk", SubResource("AnimationNodeStateMachineTransition_r5nws"), "Walk", "Turn", SubResource("AnimationNodeStateMachineTransition_8v475")]
+graph_offset = Vector2(-86, 69)
 
 [node name="Player" type="CharacterBody2D"]
 collision_layer = 2
@@ -413,8 +503,10 @@ libraries = {
 }
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
-active = false
 tree_root = SubResource("AnimationNodeStateMachine_1t3ly")
 anim_player = NodePath("../AnimationPlayer")
-parameters/Idle/blend_position = Vector2(-0.144453, -0.180851)
-parameters/Walk/blend_position = Vector2(0.0023942, -0.680851)
+parameters/Idle/blend_position = Vector2(-0.00239426, 0)
+parameters/Turn/blend_position = Vector2(-0.0135674, 0.265487)
+parameters/Walk/blend_position = Vector2(-0.0135674, 0.39823)
+
+[node name="Camera2D" type="Camera2D" parent="."]
