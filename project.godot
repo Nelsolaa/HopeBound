@@ -11,14 +11,22 @@ config_version=5
 [application]
 
 config/name="HopeBound"
-run/main_scene="res://scenes/town.tscn"
+run/main_scene="res://scenes/main_menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
+boot_splash/bg_color=Color(0, 0, 0, 1)
 config/icon="res://icon.svg"
+
+[autoload]
+
+TransitionScreen="*res://scenes/transition_screen.tscn"
+NavigationManager="*res://scenes/navigation_manager.gd"
+GlobalAudioStreamPlayer="*res://scenes/audio_player.tscn"
 
 [display]
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
+window/size/mode=2
 window/stretch/scale=2.0
 window/vsync/vsync_mode=0
 
@@ -29,4 +37,4 @@ window/vsync/vsync_mode=0
 
 [rendering]
 
-textures/decals/filter=1
+environment/defaults/default_clear_color=Color(0.205117, 0.205117, 0.205117, 1)
