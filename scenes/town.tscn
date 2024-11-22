@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=4 uid="uid://jk21dod1j5vu"]
+[gd_scene load_steps=28 format=4 uid="uid://jk21dod1j5vu"]
 
 [ext_resource type="PackedScene" uid="uid://bqnk4fm47ivjn" path="res://scenes/player.tscn" id="1_2ldfw"]
 [ext_resource type="Script" path="res://scenes/level.gd" id="1_efydg"]
@@ -13,7 +13,8 @@
 [ext_resource type="Texture2D" uid="uid://divkv5maay2ot" path="res://Assets/vegetação_construção/PC Computer - Stardew Valley - Beach Spring.png" id="9_26bwa"]
 [ext_resource type="Texture2D" uid="uid://d0dg8t6hwi81x" path="res://Assets/Flowers/red_flower.png" id="10_br36d"]
 [ext_resource type="Texture2D" uid="uid://dthx6lagqny13" path="res://Assets/Buildings/PC Computer - Stardew Valley - Farm Buildings.png" id="11_4d3f6"]
-[ext_resource type="PackedScene" path="res://scenes/door.tscn" id="14_ullmc"]
+[ext_resource type="PackedScene" uid="uid://yqmsc7ofxfn5" path="res://scenes/door.tscn" id="14_ullmc"]
+[ext_resource type="PackedScene" uid="uid://c5uwlc2l66i2j" path="res://scenes/up_town.tscn" id="15_f0nis"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_espks"]
 texture = ExtResource("1_gqcq7")
@@ -3767,6 +3768,9 @@ rotation = 1.63215
 
 [node name="Spawn" parent="Node/Door_N" index="1"]
 position = Vector2(9, -152)
+
+[node name="Node2D" parent="." instance=ExtResource("15_f0nis")]
+position = Vector2(0, -827)
 
 [editable path="Node/Door_W"]
 [editable path="Node/Door_N"]
