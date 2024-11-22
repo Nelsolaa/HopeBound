@@ -47,10 +47,10 @@ func _physics_process(delta):
 func process_player_movement_input():
 	if input_direction.y == 0:
 		input_direction.x = int(Input.is_action_pressed("ui_right")) - int(Input.is_action_pressed("ui_left"))
-		print(input_direction.x)
+		#print(input_direction.x)
 	if input_direction.x == 0:
 		input_direction.y = int(Input.is_action_pressed("ui_down")) - int(Input.is_action_pressed("ui_up"))
-		print(input_direction.y)
+		#print(input_direction.y)
 		
 
 	if input_direction != Vector2.ZERO:
