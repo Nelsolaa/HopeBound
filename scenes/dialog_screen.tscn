@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3 uid="uid://bba8iw8qh5hcj"]
+
+[ext_resource type="Script" path="res://scenes/dialog_screen.gd" id="1_6m1qk"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ctuq4"]
+line_spacing = 0.0
+font_size = 24
+
+[node name="DialogScreen" type="CanvasLayer"]
+script = ExtResource("1_6m1qk")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 600.0
+offset_bottom = 140.0
+
+[node name="NameLabel" type="Label" parent="Panel"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -85.0
+offset_top = 5.0
+offset_right = -9.0
+offset_bottom = 39.0
+grow_horizontal = 0
+text = "Arthur"
+label_settings = SubResource("LabelSettings_ctuq4")
+
+[node name="DialogRichTextLabel" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0183333
+anchor_top = 0.307143
+anchor_right = 0.981667
+anchor_bottom = 0.964286
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="NextButton" type="Button" parent="Panel"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=3 uid="uid://jk21dod1j5vu"]
+[gd_scene load_steps=47 format=3 uid="uid://jk21dod1j5vu"]
 
 [ext_resource type="PackedScene" uid="uid://bqnk4fm47ivjn" path="res://scenes/player.tscn" id="1_2ldfw"]
 [ext_resource type="Script" path="res://scenes/level.gd" id="1_efydg"]
@@ -21,8 +21,9 @@
 [ext_resource type="Texture2D" uid="uid://b1d8xoy3axg8r" path="res://Assets/Water/water_tileset1 - Copia.png" id="12_072rd"]
 [ext_resource type="PackedScene" path="res://scenes/down_town.tscn" id="20_lrc3i"]
 [ext_resource type="PackedScene" uid="uid://b34hf6204ogs1" path="res://scenes/left_town.tscn" id="21_jvi54"]
-[ext_resource type="PackedScene" uid="uid://dd5dvwsinyy1l" path="res://scenes/right_town.tscn" id="22_mn3bf"]
+[ext_resource type="PackedScene" path="res://scenes/right_town.tscn" id="22_mn3bf"]
 [ext_resource type="PackedScene" uid="uid://c5uwlc2l66i2j" path="res://scenes/up_town.tscn" id="23_qatxk"]
+[ext_resource type="PackedScene" uid="uid://cgq57cayqyv3s" path="res://scenes/NPCs/npc1.tscn" id="24_7po11"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_e24bp"]
 
@@ -3983,3 +3984,6 @@ position = Vector2(1920, 0)
 
 [node name="Node2D4" parent="." instance=ExtResource("23_qatxk")]
 position = Vector2(0, -1088)
+
+[node name="NPC1" parent="." instance=ExtResource("24_7po11")]
+position = Vector2(36, 2)
