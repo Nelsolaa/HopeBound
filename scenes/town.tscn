@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://divkv5maay2ot" path="res://Assets/vegetação_construção/PC Computer - Stardew Valley - Beach Spring.png" id="9_26bwa"]
 [ext_resource type="Texture2D" uid="uid://d0dg8t6hwi81x" path="res://Assets/Flowers/red_flower.png" id="10_br36d"]
 [ext_resource type="Texture2D" uid="uid://dthx6lagqny13" path="res://Assets/Buildings/PC Computer - Stardew Valley - Farm Buildings.png" id="11_4d3f6"]
-[ext_resource type="PackedScene" uid="uid://yqmsc7ofxfn5" path="res://scenes/door.tscn" id="14_ullmc"]
+[ext_resource type="PackedScene" path="res://scenes/door.tscn" id="14_ullmc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_espks"]
 texture = ExtResource("1_gqcq7")
@@ -3735,7 +3735,10 @@ tile_map_data = PackedByteArray("AAD/////AQABAAEAAAD//wAAAQABAAEAAAD+/wAAAQABAAE
 tile_set = SubResource("TileSet_tc2qp")
 
 [node name="Player" parent="TileMap" instance=ExtResource("1_2ldfw")]
+physics_interpolation_mode = 1
 position = Vector2(-4, 10)
+disable_mode = 1
+collision_layer = 1
 
 [node name="Camera2D" type="Camera2D" parent="TileMap/Player"]
 position = Vector2(4, -10)
