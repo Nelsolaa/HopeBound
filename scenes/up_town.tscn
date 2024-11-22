@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scenes/level.gd" id="1_qgt7m"]
 [ext_resource type="Texture2D" uid="uid://cbs55edpj8a8m" path="res://Assets/vegetação_construção/PC Computer - Stardew Valley - Pelican Town Summer.png" id="1_wwmx1"]
 [ext_resource type="PackedScene" uid="uid://bqnk4fm47ivjn" path="res://scenes/player.tscn" id="2_ytblx"]
-[ext_resource type="PackedScene" uid="uid://yqmsc7ofxfn5" path="res://scenes/door.tscn" id="4_g1tee"]
+[ext_resource type="PackedScene" path="res://scenes/door.tscn" id="4_g1tee"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_j3iv0"]
 rough = true
@@ -2263,11 +2263,14 @@ tile_map_data = PackedByteArray("AAAAAPT/AAAPAAwAAAAAAPX/AAAPAA0AAAAAAPb/AAAPAA4
 tile_set = SubResource("TileSet_52iuu")
 
 [node name="Player" parent="." instance=ExtResource("2_ytblx")]
+physics_interpolation_mode = 1
 position = Vector2(-1, 0)
+disable_mode = 1
+collision_layer = 1
 platform_floor_layers = 4294967042
 platform_wall_layers = 1
 
-[node name="Camera2D" type="Camera2D" parent="Player"]
+[node name="Camera2D2" type="Camera2D" parent="Player"]
 
 [node name="Collision" type="Area2D" parent="."]
 position = Vector2(-30, -2)
