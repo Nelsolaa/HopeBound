@@ -1,6 +1,7 @@
-[gd_scene load_steps=25 format=3 uid="uid://cgq57cayqyv3s"]
+[gd_scene load_steps=26 format=3 uid="uid://cgq57cayqyv3s"]
 
 [ext_resource type="Texture2D" uid="uid://bgbi4oky22nu8" path="res://Assets/NPCs/pokemon__sword_shield__gen5_marnie_by_izzyvicious_dddwsc2-removebg-preview.png" id="1_5o8hs"]
+[ext_resource type="Script" path="res://scenes/NPCs/npc_1.gd" id="1_dnmcj"]
 [ext_resource type="Texture2D" uid="uid://cyf65n0vaiih7" path="res://Assets/NPCs/Game_Boy_Advance_-_Pokemon_Emerald_-_Steven-removebg-preview.png" id="2_t3x8x"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y26g4"]
@@ -191,6 +192,7 @@ size = Vector2(16, 16)
 
 [node name="Area2D" type="Area2D"]
 position = Vector2(8, 6)
+script = ExtResource("1_dnmcj")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
