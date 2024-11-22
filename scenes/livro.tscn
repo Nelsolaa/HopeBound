@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c75jkj1rv0uej"]
 
 [ext_resource type="Script" path="res://scenes/livro.gd" id="1_3ymy6"]
-[ext_resource type="Texture2D" uid="uid://bm6kg1kemkklf" path="res://Assets/8649708.png" id="1_uku5c"]
+[ext_resource type="Texture2D" uid="uid://xic1erk7emdu" path="res://Assets/8649708.png" id="2_bk4bq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_26ery"]
 size = Vector2(30, 23)
@@ -12,7 +12,7 @@ script = ExtResource("1_3ymy6")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(13.75, 10.25)
 scale = Vector2(0.0167749, 0.0208861)
-texture = ExtResource("1_uku5c")
+texture = ExtResource("2_bk4bq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(13.75, 9.58108)
