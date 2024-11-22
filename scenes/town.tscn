@@ -19,7 +19,7 @@
 [ext_resource type="Texture2D" uid="uid://dthx6lagqny13" path="res://Assets/Buildings/PC Computer - Stardew Valley - Farm Buildings.png" id="11_4d3f6"]
 [ext_resource type="Texture2D" uid="uid://dp1rg7wrwb8re" path="res://Assets/Tilesets/ledge.png" id="11_6mqie"]
 [ext_resource type="Texture2D" uid="uid://b1d8xoy3axg8r" path="res://Assets/Water/water_tileset1 - Copia.png" id="12_072rd"]
-[ext_resource type="PackedScene" path="res://scenes/down_town.tscn" id="20_lrc3i"]
+[ext_resource type="PackedScene" uid="uid://cqnqlcjo1cy65" path="res://scenes/down_town.tscn" id="20_lrc3i"]
 [ext_resource type="PackedScene" uid="uid://b34hf6204ogs1" path="res://scenes/left_town.tscn" id="21_jvi54"]
 [ext_resource type="PackedScene" uid="uid://dd5dvwsinyy1l" path="res://scenes/right_town.tscn" id="22_mn3bf"]
 [ext_resource type="PackedScene" uid="uid://c5uwlc2l66i2j" path="res://scenes/up_town.tscn" id="23_qatxk"]
