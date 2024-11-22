@@ -3740,7 +3740,7 @@ position = Vector2(-4, 10)
 disable_mode = 1
 collision_layer = 1
 
-[node name="Camera2D" type="Camera2D" parent="TileMap/Player"]
+[node name="Camera2D2" type="Camera2D" parent="TileMap/Player"]
 position = Vector2(4, -10)
 
 [node name="Node" type="Node" parent="."]
