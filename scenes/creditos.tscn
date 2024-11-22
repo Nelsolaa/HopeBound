@@ -1,0 +1,49 @@
+[gd_scene load_steps=4 format=3 uid="uid://bfb7p8l0cg1m8"]
+
+[ext_resource type="FontFile" uid="uid://cfm1x36l8i3fk" path="res://Assets/Fonts/pixeloid-font/PixeloidSans-mLxMm.ttf" id="1_8055o"]
+[ext_resource type="Script" path="res://scenes/creditos.gd" id="1_mvox3"]
+[ext_resource type="FontFile" uid="uid://clfe2gmxqok8i" path="res://Assets/Fonts/ancient-modern-tales-font/AncientModernTales-a7Po.ttf" id="2_0c4xx"]
+
+[node name="credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mvox3")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -86.0
+offset_top = -11.5
+offset_right = 86.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="creditos" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_8055o")
+text = "Parabéns por salvar a cidade de HopeLand, héroi generoso!
+tomara que você tenha aprendido a valiosa lição do quão importante é 
+ajudar os outros. Agradeçemos por jogar o nosso jogo, esperamos que tenha gostado,
+com carinho, a equipe de HopeBound.
+
+-Bruno Cavalcante
+-Sérgio Farias
+-Luiz Carlos
+-Nelson Bernardes"
+
+[node name="terminar_jogo" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_0c4xx")
+theme_override_font_sizes/font_size = 23
+text = "Terminar Jogo"
+
+[connection signal="pressed" from="VBoxContainer/terminar_jogo" to="." method="_on_terminar_jogo_pressed"]

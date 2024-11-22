@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://c0sxhq4t3mmf7"]
+[gd_scene load_steps=4 format=3 uid="uid://byap0ict62khg"]
 
 [ext_resource type="Script" path="res://scenes/introdutory_text.gd" id="1_ap8qv"]
 [ext_resource type="FontFile" uid="uid://cfm1x36l8i3fk" path="res://Assets/Fonts/pixeloid-font/PixeloidSans-mLxMm.ttf" id="1_ggcin"]
