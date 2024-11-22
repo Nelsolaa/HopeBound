@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://jk21dod1j5vu"]
+[gd_scene load_steps=34 format=3 uid="uid://jk21dod1j5vu"]
 
 [ext_resource type="PackedScene" uid="uid://bqnk4fm47ivjn" path="res://scenes/player.tscn" id="1_2ldfw"]
 [ext_resource type="Script" path="res://scenes/level.gd" id="1_efydg"]
@@ -7,7 +7,10 @@
 [ext_resource type="Texture2D" uid="uid://dwrapuc52g7of" path="res://Assets/Buildings/oaks_lab.png" id="3_ggksu"]
 [ext_resource type="Texture2D" uid="uid://dndvynrjja0bi" path="res://Assets/Tilesets/fence1_tileset.png" id="4_swxff"]
 [ext_resource type="Texture2D" uid="uid://cruepf3my2ai0" path="res://Assets/Buildings/house1.png" id="5_7pc07"]
+[ext_resource type="Texture2D" uid="uid://drcjs4ehy5dy3" path="res://Assets/vegetação_construção/PC Computer - Stardew Valley - Outdoors Summer.png" id="5_doim8"]
 [ext_resource type="Texture2D" uid="uid://biyfolkvyovu0" path="res://Assets/Buildings/PC Computer - Stardew Valley - Cabins.png" id="6_e5a03"]
+[ext_resource type="Texture2D" uid="uid://cbs55edpj8a8m" path="res://Assets/vegetação_construção/PC Computer - Stardew Valley - Pelican Town Summer.png" id="6_qcnb1"]
+[ext_resource type="Texture2D" uid="uid://cgvucsv4fend0" path="res://Assets/vegetação_construção/PC Computer - Stardew Valley - Island Summer.png" id="7_qjd0u"]
 [ext_resource type="Texture2D" uid="uid://cdovjyvvc13j2" path="res://Assets/Buildings/PC Computer - Stardew Valley - Desert Festival.png" id="7_sc8ms"]
 [ext_resource type="Texture2D" uid="uid://o3wf5kp6fewc" path="res://Assets/Trees/tree1.png" id="8_4mhfp"]
 [ext_resource type="Texture2D" uid="uid://divkv5maay2ot" path="res://Assets/vegetação_construção/PC Computer - Stardew Valley - Beach Spring.png" id="9_26bwa"]
@@ -78,6 +81,18 @@ texture = ExtResource("3_ggksu")
 4:4/0 = 0
 5:4/0 = 0
 6:4/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3on6c"]
+texture = ExtResource("5_doim8")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5eqfq"]
+texture = ExtResource("6_qcnb1")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0lwrk"]
+texture = ExtResource("7_qjd0u")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n3gfi"]
+texture = ExtResource("9_26bwa")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o55kx"]
 texture = ExtResource("4_swxff")
@@ -3729,6 +3744,10 @@ sources/7 = SubResource("TileSetAtlasSource_d7lpi")
 sources/8 = SubResource("TileSetAtlasSource_wj8wl")
 sources/9 = SubResource("TileSetAtlasSource_fjgpn")
 sources/10 = SubResource("TileSetAtlasSource_6obi3")
+sources/11 = SubResource("TileSetAtlasSource_3on6c")
+sources/12 = SubResource("TileSetAtlasSource_5eqfq")
+sources/13 = SubResource("TileSetAtlasSource_0lwrk")
+sources/14 = SubResource("TileSetAtlasSource_n3gfi")
 
 [node name="Town" type="Node2D"]
 script = ExtResource("1_efydg")
