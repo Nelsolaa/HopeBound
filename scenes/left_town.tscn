@@ -3808,18 +3808,20 @@ tile_set = SubResource("TileSet_oprxm")
 
 [node name="Panel" type="Panel" parent="."]
 texture_filter = 1
-offset_left = -447.0
-offset_top = -75.0
-offset_right = -275.0
-offset_bottom = -22.0
+offset_left = -43.0
+offset_top = -275.0
+offset_right = 129.0
+offset_bottom = -222.0
 
 [node name="Label" type="Label" parent="Panel"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -25.0
-offset_right = 25.0
+offset_left = -20.0
+offset_top = -3.0
+offset_right = 30.0
+offset_bottom = -3.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 16
