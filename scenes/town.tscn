@@ -4127,9 +4127,6 @@ color = Color(0, 0, 0, 1)
 [node name="Area2D3" parent="." instance=ExtResource("24_r18up")]
 position = Vector2(-1886, -190)
 
-[node name="Area2D4" parent="." instance=ExtResource("24_r18up")]
-position = Vector2(291, -1158)
-
 [node name="Area2D5" parent="." instance=ExtResource("24_r18up")]
 position = Vector2(67, 17)
 
