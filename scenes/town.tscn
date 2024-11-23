@@ -22,8 +22,8 @@
 [ext_resource type="PackedScene" uid="uid://cqnqlcjo1cy65" path="res://scenes/down_town.tscn" id="20_lrc3i"]
 [ext_resource type="PackedScene" uid="uid://b34hf6204ogs1" path="res://scenes/left_town.tscn" id="21_jvi54"]
 [ext_resource type="PackedScene" uid="uid://dd5dvwsinyy1l" path="res://scenes/right_town.tscn" id="22_mn3bf"]
-[ext_resource type="PackedScene" uid="uid://c5uwlc2l66i2j" path="res://scenes/up_town.tscn" id="23_qatxk"]
-[ext_resource type="PackedScene" uid="uid://c75jkj1rv0uej" path="res://scenes/livro.tscn" id="24_r18up"]
+[ext_resource type="PackedScene" path="res://scenes/up_town - Copia.tscn" id="23_qatxk"]
+[ext_resource type="PackedScene" path="res://scenes/livro.tscn" id="24_r18up"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_e24bp"]
 
