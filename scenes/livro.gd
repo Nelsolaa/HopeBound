@@ -1,7 +1,7 @@
 extends Area2D
 
 
-class_name Book
+class_name Book1
 
 var points = 1
 static var total = 0

@@ -46,4 +46,11 @@ theme_override_fonts/font = ExtResource("2_0c4xx")
 theme_override_font_sizes/font_size = 23
 text = "Terminar Jogo"
 
+[node name="terminar_jogo2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_0c4xx")
+theme_override_font_sizes/font_size = 23
+text = "Reniciar Jogo"
+
 [connection signal="pressed" from="VBoxContainer/terminar_jogo" to="." method="_on_terminar_jogo_pressed"]
+[connection signal="pressed" from="VBoxContainer/terminar_jogo2" to="." method="_on_reniciar_jogo_pressed"]

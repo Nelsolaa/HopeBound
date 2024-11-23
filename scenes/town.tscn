@@ -22,8 +22,8 @@
 [ext_resource type="PackedScene" uid="uid://cqnqlcjo1cy65" path="res://scenes/down_town.tscn" id="20_lrc3i"]
 [ext_resource type="PackedScene" uid="uid://b34hf6204ogs1" path="res://scenes/left_town.tscn" id="21_jvi54"]
 [ext_resource type="PackedScene" uid="uid://dd5dvwsinyy1l" path="res://scenes/right_town.tscn" id="22_mn3bf"]
-[ext_resource type="PackedScene" path="res://scenes/up_town - Copia.tscn" id="23_qatxk"]
-[ext_resource type="PackedScene" path="res://scenes/livro.tscn" id="24_r18up"]
+[ext_resource type="PackedScene" uid="uid://c5uwlc2l66i2j" path="res://scenes/up_town - Copia.tscn" id="23_qatxk"]
+[ext_resource type="PackedScene" uid="uid://d4f2qg7x13t7p" path="res://scenes/livro.tscn" id="24_r18up"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_e24bp"]
 
@@ -4135,3 +4135,15 @@ position = Vector2(-1886, -190)
 
 [node name="Area2D4" parent="." instance=ExtResource("24_r18up")]
 position = Vector2(291, -1158)
+
+[node name="Area2D5" parent="." instance=ExtResource("24_r18up")]
+position = Vector2(67, 17)
+
+[node name="Area2D6" parent="." instance=ExtResource("24_r18up")]
+position = Vector2(47, 6)
+
+[node name="Area2D7" parent="." instance=ExtResource("24_r18up")]
+position = Vector2(50, 30)
+
+[node name="Area2D8" parent="." instance=ExtResource("24_r18up")]
+position = Vector2(25, 15)

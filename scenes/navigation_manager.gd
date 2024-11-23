@@ -2,7 +2,7 @@ extends Node
 
 const scene_town = preload("res://scenes/town.tscn")
 const scene_left_town = preload("res://scenes/left_town.tscn")
-const scene_up_town = preload("res://scenes/up_town.tscn")
+const scene_up_town = preload("res://scenes/up_town - Copia.tscn")
 
 signal on_trigger_player_spawn
 
