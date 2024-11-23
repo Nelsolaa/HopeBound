@@ -1,11 +1,11 @@
 [gd_scene load_steps=2 format=3 uid="uid://cqnqlcjo1cy65"]
 
-[ext_resource type="TileSet" uid="uid://oaqhah6ytyum" path="res://scenes/tilesetMain.tres" id="1_gohkj"]
+[ext_resource type="TileSet" uid="uid://dkcv87f704p3f" path="res://scenes/tilesetMain2.tres" id="1_8g8ht"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
-tile_set = ExtResource("1_gohkj")
+tile_set = ExtResource("1_8g8ht")
 format = 2
 layer_0/name = "Ground"
 layer_0/z_index = -1
