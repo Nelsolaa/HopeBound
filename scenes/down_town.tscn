@@ -1,11 +1,11 @@
 [gd_scene load_steps=2 format=3 uid="uid://cqnqlcjo1cy65"]
 
-[ext_resource type="TileSet" uid="uid://oaqhah6ytyum" path="res://scenes/tilesetMain.tres" id="1_gohkj"]
+[ext_resource type="TileSet" uid="uid://cip3tgql4i60b" path="res://scenes/tilesetMain.tres" id="1_fwixv"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
-tile_set = ExtResource("1_gohkj")
+tile_set = ExtResource("1_fwixv")
 format = 2
 layer_0/name = "Ground"
 layer_0/z_index = -1
@@ -18,3 +18,4 @@ layer_2/z_index = 1
 layer_2/tile_data = PackedInt32Array(851935, 1114131, 32, 917471, 1114131, 33, -720881, 1179667, 21, -655345, 1179667, 22, -720871, 1179667, 22, -786407, 1179667, 21, -589856, 917523, 32, -786456, 917523, 32, -262172, 917523, 32, -524302, 917523, 32, 851988, 458771, 24, 917524, 458771, 25, 786463, 1769491, 12, 851999, 1769491, 13, 983057, 1179667, 21, 1048593, 1179667, 22)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="TileMap"]
+tile_set = ExtResource("1_fwixv")

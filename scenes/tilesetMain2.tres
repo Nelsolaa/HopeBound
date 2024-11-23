@@ -1,30 +1,29 @@
+[gd_resource type="TileSet" load_steps=39 format=3 uid="uid://dkcv87f704p3f"]
 
-[gd_resource type="TileSet" load_steps=39 format=3 uid="uid://cip3tgql4i60b"]
-
-[ext_resource type="Texture2D" uid="uid://dnygyw8xced1u" path="res://Assets/Grass/tall_grass.png" id="1_846v6"]
-[ext_resource type="Texture2D" uid="uid://f5ltxk5wrlhi" path="res://Assets/Tilesets/grass1_tileset.png" id="2_yqtw8"]
-[ext_resource type="Texture2D" uid="uid://dwrapuc52g7of" path="res://Assets/Buildings/oaks_lab.png" id="3_rbt7g"]
-[ext_resource type="Texture2D" uid="uid://q077pi4q3k81" path="res://Assets/Buildings/PC Computer - Stardew Valley - Beach Spring.png" id="4_uu4u4"]
-[ext_resource type="Texture2D" uid="uid://biyfolkvyovu0" path="res://Assets/Buildings/PC Computer - Stardew Valley - Cabins.png" id="5_t8jqo"]
-[ext_resource type="Texture2D" uid="uid://cdovjyvvc13j2" path="res://Assets/Buildings/PC Computer - Stardew Valley - Desert Festival.png" id="6_5yrei"]
-[ext_resource type="Texture2D" uid="uid://dthx6lagqny13" path="res://Assets/Buildings/PC Computer - Stardew Valley - Farm Buildings.png" id="7_54yno"]
-[ext_resource type="Texture2D" uid="uid://dbx44aasvvhbn" path="res://Assets/Buildings/PC Computer - Stardew Valley - Island Summer.png" id="8_6xo3n"]
-[ext_resource type="Texture2D" uid="uid://cf0bvj71yckle" path="res://Assets/Buildings/PC Computer - Stardew Valley - Outdoors Summer.png" id="9_8sh4l"]
-[ext_resource type="Texture2D" uid="uid://bg4s05huskogi" path="res://Assets/Buildings/PC Computer - Stardew Valley - Pelican Town Summer.png" id="10_5xx0i"]
-[ext_resource type="Texture2D" uid="uid://y2w54twg5r02" path="res://Assets/Buildings/PC Computer - Stardew Valley - Sheds.png" id="11_g8km4"]
-[ext_resource type="Texture2D" uid="uid://dndvynrjja0bi" path="res://Assets/Tilesets/fence1_tileset.png" id="12_dpd14"]
-[ext_resource type="Texture2D" uid="uid://cruepf3my2ai0" path="res://Assets/Buildings/house1.png" id="13_u5u63"]
-[ext_resource type="Texture2D" uid="uid://o3wf5kp6fewc" path="res://Assets/Trees/tree1.png" id="14_l2p0d"]
-[ext_resource type="Texture2D" uid="uid://divkv5maay2ot" path="res://Assets/vegetação_construção/PC Computer - Stardew Valley - Beach Spring.png" id="15_38yn3"]
-[ext_resource type="Texture2D" uid="uid://d0dg8t6hwi81x" path="res://Assets/Flowers/red_flower.png" id="16_8ux71"]
+[ext_resource type="Texture2D" uid="uid://dnygyw8xced1u" path="res://Assets/Grass/tall_grass.png" id="1_i8odg"]
+[ext_resource type="Texture2D" uid="uid://f5ltxk5wrlhi" path="res://Assets/Tilesets/grass1_tileset.png" id="2_6qnib"]
+[ext_resource type="Texture2D" uid="uid://dwrapuc52g7of" path="res://Assets/Buildings/oaks_lab.png" id="3_xng6x"]
+[ext_resource type="Texture2D" uid="uid://q077pi4q3k81" path="res://Assets/Buildings/PC Computer - Stardew Valley - Beach Spring.png" id="4_gup5f"]
+[ext_resource type="Texture2D" uid="uid://biyfolkvyovu0" path="res://Assets/Buildings/PC Computer - Stardew Valley - Cabins.png" id="5_lbmmp"]
+[ext_resource type="Texture2D" uid="uid://cdovjyvvc13j2" path="res://Assets/Buildings/PC Computer - Stardew Valley - Desert Festival.png" id="6_7lfhh"]
+[ext_resource type="Texture2D" uid="uid://dthx6lagqny13" path="res://Assets/Buildings/PC Computer - Stardew Valley - Farm Buildings.png" id="7_m0ur4"]
+[ext_resource type="Texture2D" uid="uid://dbx44aasvvhbn" path="res://Assets/Buildings/PC Computer - Stardew Valley - Island Summer.png" id="8_ap3c3"]
+[ext_resource type="Texture2D" uid="uid://cf0bvj71yckle" path="res://Assets/Buildings/PC Computer - Stardew Valley - Outdoors Summer.png" id="9_jp3sa"]
+[ext_resource type="Texture2D" uid="uid://bg4s05huskogi" path="res://Assets/Buildings/PC Computer - Stardew Valley - Pelican Town Summer.png" id="10_y2oi5"]
+[ext_resource type="Texture2D" uid="uid://y2w54twg5r02" path="res://Assets/Buildings/PC Computer - Stardew Valley - Sheds.png" id="11_1048y"]
+[ext_resource type="Texture2D" uid="uid://dndvynrjja0bi" path="res://Assets/Tilesets/fence1_tileset.png" id="12_3mdun"]
+[ext_resource type="Texture2D" uid="uid://cruepf3my2ai0" path="res://Assets/Buildings/house1.png" id="13_gia2p"]
+[ext_resource type="Texture2D" uid="uid://o3wf5kp6fewc" path="res://Assets/Trees/tree1.png" id="14_mt75w"]
+[ext_resource type="Texture2D" uid="uid://divkv5maay2ot" path="res://Assets/vegetação_construção/PC Computer - Stardew Valley - Beach Spring.png" id="15_vj44f"]
+[ext_resource type="Texture2D" uid="uid://d0dg8t6hwi81x" path="res://Assets/Flowers/red_flower.png" id="16_q7wma"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_espks"]
-texture = ExtResource("1_846v6")
+texture = ExtResource("1_i8odg")
 0:0/0 = 0
 1:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3223w"]
-texture = ExtResource("2_yqtw8")
+texture = ExtResource("2_6qnib")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -44,7 +43,7 @@ texture = ExtResource("2_yqtw8")
 1:4/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6obi3"]
-texture = ExtResource("3_rbt7g")
+texture = ExtResource("3_xng6x")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -82,7 +81,7 @@ texture = ExtResource("3_rbt7g")
 6:4/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xdrr2"]
-texture = ExtResource("4_uu4u4")
+texture = ExtResource("4_gup5f")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -569,7 +568,7 @@ texture = ExtResource("4_uu4u4")
 16:30/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dtrh7"]
-texture = ExtResource("5_t8jqo")
+texture = ExtResource("5_lbmmp")
 1:0/0 = 0
 2:0/0 = 0
 3:0/0 = 0
@@ -1277,7 +1276,7 @@ texture = ExtResource("5_t8jqo")
 14:48/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vbkjp"]
-texture = ExtResource("6_5yrei")
+texture = ExtResource("6_7lfhh")
 3:0/0 = 0
 4:0/0 = 0
 5:0/0 = 0
@@ -2222,7 +2221,7 @@ texture = ExtResource("6_5yrei")
 4:34/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mfwjd"]
-texture = ExtResource("7_54yno")
+texture = ExtResource("7_m0ur4")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -3650,7 +3649,7 @@ texture = ExtResource("7_54yno")
 56:24/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lublc"]
-texture = ExtResource("8_6xo3n")
+texture = ExtResource("8_ap3c3")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -4786,7 +4785,7 @@ texture = ExtResource("8_6xo3n")
 31:39/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n81lp"]
-texture = ExtResource("9_8sh4l")
+texture = ExtResource("9_jp3sa")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -8103,7 +8102,7 @@ texture = ExtResource("9_8sh4l")
 34:103/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yhhne"]
-texture = ExtResource("10_5xx0i")
+texture = ExtResource("10_y2oi5")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -10080,7 +10079,7 @@ texture = ExtResource("10_5xx0i")
 31:71/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5owi7"]
-texture = ExtResource("11_g8km4")
+texture = ExtResource("11_1048y")
 2:0/0 = 0
 3:0/0 = 0
 4:0/0 = 0
@@ -10185,7 +10184,7 @@ texture = ExtResource("11_g8km4")
 13:7/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dc5mn"]
-texture = ExtResource("6_5yrei")
+texture = ExtResource("6_7lfhh")
 17:32/animation_columns = 3
 17:32/animation_frame_0/duration = 1.0
 17:32/animation_frame_1/duration = 1.0
@@ -10698,7 +10697,7 @@ texture = ExtResource("6_5yrei")
 13:25/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o55kx"]
-texture = ExtResource("12_dpd14")
+texture = ExtResource("12_3mdun")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -10711,7 +10710,7 @@ texture = ExtResource("12_dpd14")
 1:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x7weu"]
-texture = ExtResource("9_8sh4l")
+texture = ExtResource("9_jp3sa")
 16:45/0 = 0
 15:45/0 = 0
 15:44/animation_columns = 2
@@ -11079,7 +11078,7 @@ texture = ExtResource("9_8sh4l")
 12:23/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d6kj5"]
-texture = ExtResource("10_5xx0i")
+texture = ExtResource("10_y2oi5")
 23:32/0 = 0
 23:32/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 23:33/0 = 0
@@ -11118,7 +11117,7 @@ texture = ExtResource("10_5xx0i")
 24:32/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rfetr"]
-texture = ExtResource("13_u5u63")
+texture = ExtResource("13_gia2p")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -11146,7 +11145,7 @@ texture = ExtResource("13_u5u63")
 4:4/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4rd4u"]
-texture = ExtResource("5_t8jqo")
+texture = ExtResource("5_lbmmp")
 1:0/0 = 0
 2:0/0 = 0
 3:0/0 = 0
@@ -11854,7 +11853,7 @@ texture = ExtResource("5_t8jqo")
 14:48/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0lxm8"]
-texture = ExtResource("6_5yrei")
+texture = ExtResource("6_7lfhh")
 3:0/0 = 0
 4:0/0 = 0
 5:0/0 = 0
@@ -12800,7 +12799,7 @@ texture = ExtResource("6_5yrei")
 18:20/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2mexf"]
-texture = ExtResource("14_l2p0d")
+texture = ExtResource("14_mt75w")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
@@ -12809,7 +12808,7 @@ texture = ExtResource("14_l2p0d")
 1:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d7lpi"]
-texture = ExtResource("15_38yn3")
+texture = ExtResource("15_vj44f")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -13296,7 +13295,7 @@ texture = ExtResource("15_38yn3")
 16:30/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wj8wl"]
-texture = ExtResource("16_8ux71")
+texture = ExtResource("16_q7wma")
 2:0/0 = 0
 0:0/0 = 0
 1:0/0 = 0
@@ -13304,7 +13303,7 @@ texture = ExtResource("16_8ux71")
 4:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fjgpn"]
-texture = ExtResource("7_54yno")
+texture = ExtResource("7_m0ur4")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
